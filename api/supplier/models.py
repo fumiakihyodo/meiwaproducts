@@ -61,9 +61,6 @@ class Supplier(models.Model):
 
     def __str__(self):
         return self.company_name
-    
-    # NOTE: active_branches_count property has been removed to avoid conflicts with annotate()
-    # The field is now added dynamically in views using annotate()
 
     
 class SupplierBranch(models.Model):
